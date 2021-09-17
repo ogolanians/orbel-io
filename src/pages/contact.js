@@ -1,8 +1,10 @@
 import React from "react";
 
+import Layout from "../components/layout";
+
 const ContactPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>Contact Me</h1>
       <p>Feel free to email me: ogolanians@gmail.com</p>
       <p>
@@ -35,7 +37,7 @@ const ContactPage = () => {
           Orbel Golanians
         </a>
       </p>
-    </div>
+    </Layout>
   );
 };
 
