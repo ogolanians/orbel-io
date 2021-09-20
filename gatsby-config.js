@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "orbel-io",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-sass"],
 };
