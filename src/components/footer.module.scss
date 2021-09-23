@@ -1,0 +1,31 @@
+.parent-container {
+  background-color: rgb(70, 103, 129);
+  width: 100%;
+  padding: 1rem;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 750px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+  margin-right: 1.5rem;
+  color: white;
+}
+
+.content-container {
+  max-width: 750px;
+  margin: 1.2rem auto 1.2rem;
+}
+
+.text {
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}

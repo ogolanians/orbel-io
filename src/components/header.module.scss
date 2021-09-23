@@ -1,20 +1,26 @@
 .header {
   padding: 1rem 0 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .logo {
-  max-width: 20%;
+  max-width: 200px;
+  margin-right: 3rem;
 }
 
 .nav-list {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
 .nav-item {
   color: #999;
   font-size: 0.9rem;
+  font-weight: 600;
   margin-right: 1.3rem;
   text-decoration: none;
 }
