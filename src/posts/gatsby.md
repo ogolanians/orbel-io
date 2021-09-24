@@ -1,6 +1,6 @@
 ---
 title: "First post test"
-date: "2021-09-23
+date: "2021-09-23"
 ---
 
 I am writing blogs now, woohooo dude!
