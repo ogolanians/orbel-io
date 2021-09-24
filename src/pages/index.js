@@ -7,9 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <h1>Hello,</h1>
-      <h2>
-        I am Orbel, a software engineer from the vibrant city of Los Angeles.
-      </h2>
+      <h2>I am Orbel, a software engineer from Los Angeles.</h2>
       <p>
         Need a developer? <Link to="/contact">Contact me.</Link>
       </p>
