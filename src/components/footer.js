@@ -1,9 +1,22 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
+import { graphql, useStaticQuery } from "gatsby";
 
 import * as footerStyles from "./footer.module.scss";
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+          title
+          siteUrl
+        }
+      }
+    }
+  `);
+
   return (
     <footer>
       <div className={footerStyles.parentContainer}>
@@ -32,8 +45,10 @@ const Footer = () => {
             </a>
           </div>
           <p className={footerStyles.text}>
-            Created by Orbel Golanians, © 2021
+            Created by {data.site.siteMetadata.author} © 2021
           </p>
+          <p className={footerStyles.text}>{data.site.siteMetadata.title}</p>
+          <p className={footerStyles.text}>{data.site.siteMetadata.siteUrl}</p>
         </div>
       </div>
     </footer>
