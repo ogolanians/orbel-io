@@ -6,7 +6,10 @@ const ContactPage = () => {
   return (
     <Layout>
       <h1>Contact Me</h1>
-      <p>Feel free to email me: ogolanians@gmail.com</p>
+      <p>
+        Feel free to email me:{" "}
+        <a href="mailto:ogolanians@gmail.com">ogolanians@gmail.com</a>
+      </p>
       <p>
         LinkedIn:{" "}
         <a
