@@ -1,5 +1,5 @@
 ---
-title: "First post test"
+title: "Test Blog Post"
 date: "2021-09-23"
 ---
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../components/head";
 
 import Layout from "../components/layout";
 import * as projectsStyles from "./projects.module.scss";
@@ -6,6 +7,7 @@ import * as projectsStyles from "./projects.module.scss";
 const ProjectsPage = () => {
   return (
     <Layout>
+      <Head title="Projects" />
       <h1>Projects</h1>
       <p>Here are some of the projects I've worked on.</p>
       <div className={projectsStyles.projects}>
