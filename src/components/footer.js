@@ -43,12 +43,17 @@ const Footer = () => {
             >
               <FaIcons.FaTwitter className={footerStyles.icon} />
             </a>
+            <a
+              href="https://instagram.com/orbel.px"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaIcons.FaInstagram className={footerStyles.icon} />
+            </a>
           </div>
           <p className={footerStyles.text}>
-            Created by {data.site.siteMetadata.author} © 2021
+            Created for fun by {data.site.siteMetadata.author} © 2021
           </p>
-          <p className={footerStyles.text}>{data.site.siteMetadata.title}</p>
-          <p className={footerStyles.text}>{data.site.siteMetadata.siteUrl}</p>
         </div>
       </div>
     </footer>

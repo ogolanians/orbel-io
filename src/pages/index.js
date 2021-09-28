@@ -9,7 +9,8 @@ const IndexPage = () => {
       <h1>Hello,</h1>
       <h2>I am Orbel, a software engineer from Los Angeles.</h2>
       <p>
-        Need a developer? <Link to="/contact">Contact me.</Link>
+        I design plus develop iOS and web applications.{" "}
+        <Link to="/contact">Contact me.</Link>
       </p>
     </Layout>
   );

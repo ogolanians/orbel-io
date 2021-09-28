@@ -37,6 +37,16 @@ const ContactPage = () => {
           @orbylicious
         </a>
       </p>
+      <p>
+        Instagram:{" "}
+        <a
+          href="https://instagram.com/orbel.px"
+          target="_blank"
+          rel="noreferrer"
+        >
+          @orbel.px
+        </a>
+      </p>
     </Layout>
   );
 };
