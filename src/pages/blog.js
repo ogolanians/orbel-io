@@ -30,7 +30,8 @@ const BlogPage = () => {
       <Head title="Blog" />
       <div>
         <h1>Blog</h1>
-        <ol className={blogStyles.posts}>
+        <p>No blog posts published yet.</p>
+        {/* <ol className={blogStyles.posts}>
           {data.allMarkdownRemark.edges.map((edge) => {
             return (
               <li className={blogStyles.post}>
@@ -41,7 +42,7 @@ const BlogPage = () => {
               </li>
             );
           })}
-        </ol>
+        </ol> */}
       </div>
     </Layout>
   );
