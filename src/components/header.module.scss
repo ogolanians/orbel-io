@@ -1,3 +1,10 @@
+@import "../styles/_media-queries.scss";
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   padding: 1rem 0 3rem;
   display: flex;
@@ -15,6 +22,11 @@
   display: flex;
   list-style-type: none;
   margin: 0 0 30px;
+  position: relative;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .nav-item {
@@ -31,4 +43,17 @@
 
 .active-nav-item {
   color: #333;
+}
+
+.nav-menu {
+  opacity: 0;
+
+  @include tablet {
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 1rem;
+    color: red;
+  }
 }

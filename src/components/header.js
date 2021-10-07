@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import OrbelLogo from "../assets/orbel-logo-2.png";
+import { RiMenu3Line } from "react-icons/ri";
 
 import * as headerStyles from "./header.module.scss";
 
@@ -14,6 +15,9 @@ const Header = () => {
           alt="Orbel Golanians' logo"
         ></img>
       </Link>
+      <div className={headerStyles.navMenu}>
+        <RiMenu3Line />
+      </div>
       <nav>
         <ul className={headerStyles.navList}>
           <li>

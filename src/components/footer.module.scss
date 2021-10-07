@@ -1,8 +1,10 @@
 .parent-container {
   background-color: rgb(70, 103, 129);
-  width: 100%;
-  padding: 1rem;
+  width: 100vw;
   margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
 }
 
 .icons-container {
