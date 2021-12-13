@@ -4,12 +4,18 @@ import React from "react";
 import Layout from "../components/layout";
 import Head from "../components/head";
 
+import OrbelImg from "../assets/orbel-about.jpg";
+
 const AboutPage = () => {
   return (
     <Layout>
       <Head title="About" />
       <div>
-        <h1>About</h1>
+        <div>
+          <h1>About</h1>
+
+          <img src={OrbelImg} width="200" />
+        </div>
         <p>
           Constantly tinkering with different forms and variations of
           technology. My obsession with details continues to push my mind
