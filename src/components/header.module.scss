@@ -26,6 +26,7 @@
 }
 
 .logo-wrapper img {
+  width: 9rem;
   margin: 0;
   padding: 0;
 }
@@ -65,7 +66,7 @@
 
 @media only screen and (max-width: 768px) {
   .navigation-wrapper {
-    padding: 0;
+    padding: 1rem 0;
   }
 
   .header {
@@ -111,7 +112,7 @@
   .bar-three {
     width: 2rem;
     height: 0.25rem;
-    background: $darkBlue;
+    background: #333;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

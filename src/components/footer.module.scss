@@ -1,6 +1,7 @@
 @import "../styles/_media-queries.scss";
 
 .parent-container {
+  z-index: 10;
   background-color: rgb(70, 103, 129);
   width: 100vw;
   padding-top: 1rem;

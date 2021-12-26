@@ -2,10 +2,10 @@
 
 .mobile-nav-wrapper {
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: $green;
+  background-color: $medBlueTint;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -15,13 +15,13 @@
   height: 0%;
   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
   overflow: hidden;
-}
-
-.mobile-nav-wrapper.open {
-  // animate nav opening details end
-  opacity: 1;
-  visibility: visible;
-  height: 100vh;
+  left: 0;
+  &.open {
+    // animate nav opening details end
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+  }
 }
 
 .mobile-link {
@@ -29,16 +29,22 @@
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
-  color: #1c2541;
+  color: #666;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 2rem 0.5rem;
   border-radius: 3px;
-  margin: 0 0.5rem;
+  margin: 0.5rem 0.5rem;
+  &.active {
+    color: #333;
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+  }
 }
 
-.mobile-link.active {
-  color: $medBlue;
-  background-color: $lightGreen;
-  border-radius: 5px;
-  width: 90%;
-}
+// .mobile-link-active {
+//   color: #333;
+//   background-color: white;
+//   border-radius: 5px;
+//   width: 90%;
+// }

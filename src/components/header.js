@@ -1,12 +1,12 @@
 import React, { useEffect, useContext } from "react";
 import { Link } from "gatsby";
-import OrbelLogo from "../assets/orbel-logo-2.png";
-import MobileNavContext from "../hooks/mobileNavContext";
-import * as headerStyles from "./header.module.scss";
 import classNames from "classnames";
+import OrbelLogoSVG from "../assets/orbel-logo-8.svg";
+import MobileNavContext from "../hooks/mobileNavContext";
+import MobileNavLinks from "./mobileNavLinks";
+import * as headerStyles from "./header.module.scss";
 
 const Header = () => {
-  console.log(headerStyles);
   const mobileNavContext = useContext(MobileNavContext);
   const active = classNames(headerStyles.mobileMenu, {
     [headerStyles.open]: mobileNavContext.mobileNavOpen,
@@ -15,8 +15,6 @@ const Header = () => {
   // const active = mobileNavContext.mobileNavOpen
   //   ? headerStyles.open
   //   : headerStyles.mobileMenu;
-
-  console.log("active: ", active);
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,7 +38,8 @@ const Header = () => {
         <div className={headerStyles.header}>
           <div className={headerStyles.logoWrapper}>
             <Link to="/">
-              <img src={OrbelLogo} alt="Orbel Golanians' logo"></img>
+              {/* <img src={OrbelLogo} alt="Orbel Golanians' logo"></img> */}
+              <img src={OrbelLogoSVG} alt="Orbel Golanians' logo"></img>
             </Link>
           </div>
           <span className={headerStyles.navigationLinks}>
@@ -101,51 +100,10 @@ const Header = () => {
             )}
           </span>
         </div>
-
-        {/* // <button onCLick={toggleMenuState()}>
-        //   {mobileNavContext.mobileNavOpen ? <RiCloseFill /> : <RiMenu3Line />}
-        // </button>
-        // <nav>
-        //   <ul className={headerStyles.navList}>
-        //     <li>
-        //       <Link
-        //         className={headerStyles.navItem}
-        //         activeClassName={headerStyles.activeNavItem}
-        //         to="/"
-        //       >
-        //         Home
-        //       </Link>
-        //     </li>
-        //     <li>
-        //       <Link
-        //         className={headerStyles.navItem}
-        //         activeClassName={headerStyles.activeNavItem}
-        //         to="/about"
-        //       >
-        //         About
-        //       </Link>
-        //     </li>
-        //     <li>
-        //       <Link
-        //         className={headerStyles.navItem}
-        //         activeClassName={headerStyles.activeNavItem}
-        //         to="/projects"
-        //       >
-        //         Projects
-        //       </Link>
-        //     </li>
-        //     <li>
-        //       <Link
-        //         className={headerStyles.navItem}
-        //         activeClassName={headerStyles.activeNavItem}
-        //         to="/contact"
-        //       >
-        //         Contact
-        //       </Link>
-        //     </li>
-        //   </ul>
-        // </nav> */}
       </header>
+      {mobileNavContext.showMobileNavMenu ? (
+        <MobileNavLinks open={mobileNavContext.mobileNavOpen} />
+      ) : null}
     </>
   );
 };
